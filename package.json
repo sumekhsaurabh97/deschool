@@ -1,0 +1,41 @@
+{
+  "name": "next-deschool",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.14.1",
+    "@stripe/stripe-js": "^1.42.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.2",
+    "country-code-lookup": "^0.0.20",
+    "country-flag-icons": "^1.5.5",
+    "font-awesome": "^4.7.0",
+    "moment": "^2.29.4",
+    "next": "^12.2.4",
+    "next-share": "^0.18.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-datepicker": "^4.8.0",
+    "react-debounce-input": "^3.3.0",
+    "react-dom": "^18.2.0",
+    "react-fa-icon": "^0.1.4",
+    "react-moment": "^1.1.2",
+    "react-router-dom": "^6.4.2",
+    "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.54.4",
+    "slick-carousel": "^1.8.1",
+    "spinners-react": "^1.0.7",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.4"
+  }
+}

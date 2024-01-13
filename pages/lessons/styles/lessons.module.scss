@@ -1,0 +1,167 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles//_breakpoints.scss";
+
+.lessonsBackground {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  // padding: 100px 0;
+  @media screen and (max-width: $mobile) {
+    padding: 50px 0px;
+  }
+  .title {
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 54px;
+      letter-spacing: -1.5px;
+      color: $color-brand-text;
+    }
+  }
+  .searchLesson {
+    .search {
+      width: 100%;
+      height: 46px;
+      background-color: $color-brand-primary;
+      border: 1px solid $color-brand-text;
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $color-brand-text;
+      background: url(/assets/images/Search_icon_dark.svg) 0 0 no-repeat;
+      background-position: 12px 12px;
+      padding: 0px 5px 0px 35px;
+      &::placeholder,
+      &::target-text {
+        opacity: 0.5;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  .cardBodyInner {
+    margin: auto;
+    padding: 10px 30px;
+    @media screen and (max-width: $tablet) {
+      padding: unset;
+    }
+    ul {
+      &.cardBodyHeader {
+        li {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.02em;
+          color: $tertiary-black-color;
+        }
+        li {
+          &.age {
+            margin-right: 15px;
+          }
+        }
+        li {
+          &.time {
+            margin-left: 15px;
+            margin-right: 5px;
+            @media screen and (max-width: $mobile) {
+              margin-left: 0px;
+            }
+          }
+        }
+        li {
+          &.calender {
+            margin-left: 30px;
+            margin-right: 5px;
+            @media screen and (max-width: $mobile) {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      &.cardBodyFooter {
+        li {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 18px;
+          letter-spacing: -0.02em;
+          color: $tertiary-black-color;
+        }
+        li {
+          &.image {
+            img {
+              border-radius: 20px;
+              object-fit: cover;
+            }
+          }
+          &.image::after {
+            background: url(/assets/images/Ellipse.svg) 0 0 no-repeat;
+            content: "";
+            width: 50px;
+            position: absolute;
+            height: 26px;
+            left: 3px;
+            bottom: -23px;
+            background-size: 50%;
+          }
+        }
+        li {
+          &.author {
+            margin: 8px 10px;
+          }
+        }
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      font-feature-settings: "liga" off;
+      color: $color-brand-text;
+      text-decoration: none;
+      @media screen and (max-width: $mobile) {
+        text-align: left;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $color-brand-text;
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      margin: 10px 0px;
+      min-height: 55px;
+    }
+  }
+}
+
+.cardDescription {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-overflow: ellipsis;
+}

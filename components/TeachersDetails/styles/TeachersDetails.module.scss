@@ -1,0 +1,499 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/variables.scss";
+@import "../../../styles/fonts.scss";
+
+// cards--
+.bookNowCard {
+  width: 398px;
+  padding: 25.68px;
+  margin-top: 38px;
+  border-radius: 10.27px;
+  box-shadow: 0 0 15px -6px #000000;
+  .card_Description {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 3%;
+    color: #444444;
+    margin-bottom: 7px;
+  }
+
+  .card_description_small {
+    display: none;
+  }
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    width: 305px;
+    .card_description_normal {
+      display: none;
+    }
+    .card_description_small {
+      display: block;
+    }
+  }
+
+  h3 {
+    color: $black-color;
+    margin-bottom: 20.54px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 3%;
+  }
+  .learner_price {
+    margin-bottom: 20.54px;
+    :first-child {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 3%;
+      margin-right: 8px;
+      color: #1f1e1e;
+    }
+    :last-child {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.2px;
+      color: #1f1e1e;
+    }
+  }
+  .calender {
+    margin-bottom: 20.54px;
+    span {
+      color: #1f1e1e;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25.6px;
+      padding-left: 10px;
+    }
+  }
+  .read_More {
+    color: #050505;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: $black-color;
+    font-weight: 500;
+  }
+
+  button {
+    background: $body-bg;
+    border: none;
+    width: 100%;
+    height: 53.92px;
+    border-radius: 5.14px;
+    display: block;
+    color: $white-color;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3%;
+    margin-top: 30px;
+  }
+  button:last-of-type {
+    margin-top: 15px;
+    background-color: $white-color;
+    border: 2px solid $body-bg;
+    color: $body-bg;
+  }
+}
+
+// review
+
+.reviews {
+  background-color: #f7f5f4;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.reviewImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.reviewsTitle {
+  color: $black-color;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: 23px;
+  margin-bottom: 32px;
+}
+
+.name_description {
+  padding-left: 32px;
+  width: 100%;
+  h3 {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3%;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  hr {
+    margin-bottom: 12px;
+  }
+  .updateDate {
+    color: #00000066;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3%;
+    line-height: 12px;
+    margin-bottom: 11px;
+  }
+  p {
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3%;
+  }
+  button {
+    background-color: $body-bg;
+    border: none;
+    width: 217px;
+    height: 32px;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    color: $white-color;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: $mobile-small) and (max-width: $tablet) {
+  // review
+  .name_description {
+    padding-left: 20px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .bookNowCard {
+    margin: 36px auto 36px auto;
+  }
+  // review
+  .name_description {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .bookNowCard {
+    width: 100%;
+    margin: 30px auto 30px auto;
+  }
+  // review
+  .reviews{
+    flex-direction: column;
+  }
+  .reviewImage{
+    margin: 0px auto 15px auto;
+  }
+  .name_description {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .name_description button {
+    width: 78%;
+    gap: 5px;
+    margin: 0px auto 12px auto;
+  }
+}
+
+// teacher-Rating
+.section_heading {
+  color: $black-color;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  margin: 0px 0px 32px 0px;
+}
+.leave_btn {
+  height: 36px;
+  min-width: 140px;
+  padding: 6px 13px 6px 13px;
+  font-weight: 700;
+  border-radius: 7px;
+  margin-left: 25px;
+  max-width: 70%;
+  background-color: $white-color;
+}
+.card {
+  background-color: #f7f5f4;
+  border-radius: 10px;
+  margin-bottom: 56px;
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $black-color;
+    text-align: center;
+    padding: 30px 5px 30px 5px;
+    margin-bottom: 0px;
+  }
+}
+.card_1 {
+  width: 25%;
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  button {
+    display: block;
+    margin: auto;
+    line-height: 18px;
+    padding: 10px 0px 10px 0px;
+    width: 55%;
+    border-radius: 7px;
+    background-color: $white-color;
+    margin: 20px auto 20px auto;
+    border: none;
+    i {
+      padding-left: 10px;
+    }
+  }
+}
+.word_on_card_style {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $black-color;
+  padding-right: 7px;
+}
+.signal {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: $body-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.card_2 {
+  width: 33%;
+
+  div {
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    justify-content: center;
+    width: 88%;
+    text-align: center;
+    background-color: white;
+    margin: 0px auto 20px auto;
+    border-radius: 7px;
+    span {
+      padding: 8px 0px 8px 0px;
+    }
+    :first-child a i {
+      padding-left: 7px;
+    }
+  }
+}
+.font_w {
+  font-weight: 700;
+}
+
+.progress_bar_color {
+  background-color: $body-bg;
+}
+
+.card_3 {
+  width: 38%;
+  div {
+    display: flex;
+    align-items: baseline;
+    :first-child {
+      width: 32%;
+      text-align: right;
+      padding-left: 10px;
+    }
+    :last-child {
+      padding-right: 10px;
+    }
+  }
+}
+.progress {
+  height: 10px !important;
+  width: 51% !important;
+  margin: 15px auto 17px auto !important;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .rating_box {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-bottom: 28px;
+  }
+  .card_1,
+  .card_2 {
+    width: 47%;
+  }
+
+  .card_3 {
+    width: 85%;
+    margin: 0px auto 56px auto;
+    padding-bottom: 15px;
+    div {
+      :first-child {
+        width: 26%;
+      }
+      :last-child {
+        padding-right: 30px !important;
+      }
+    }
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .rating_box {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .card {
+    margin-bottom: 32px;
+  }
+  .card_1,
+  .card_2,
+  .card_3 {
+    width: 100%;
+  }
+  .card_2 {
+    div {
+      width: 75%;
+      gap: 10px;
+    }
+  }
+}
+.card_3 {
+  padding-bottom: 15px;
+  div {
+    :first-child {
+      width: 27%;
+    }
+  }
+}
+
+.progress {
+  margin: 15px 15px 15px 15px !important;
+}
+
+@media (min-width: 320px) and (max-width: $mobile) {
+  .rating_box {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card_1,
+  .card_2,
+  .card_3 {
+    width: 100%;
+  }
+  .card_2 {
+    div {
+      width: 81%;
+      gap: 11px;
+    }
+  }
+  @media (min-width: $mobile-small) and (max-width: $mobile) {
+    .card_2 {
+      div {
+        width: 70%;
+        gap: 20px;
+      }
+    }
+  }
+  .card_3 {
+    padding-bottom: 15px;
+    div {
+      :first-child {
+        width: 27%;
+      }
+      @media (min-width: $mobile-small) and (max-width: $mobile) {
+        :last-child {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .rating_section {
+    flex-direction: column;
+    h1 {
+      text-align: center;
+    }
+  }
+  .leave_btn {
+    margin: 0px auto 20px auto;
+  }
+}
+
+
+
+// form--
+.form_heading{
+  font-size: 23px;
+  color: $black-color;
+  font-weight: 700;
+  margin: 40px 0px 32px 0px;
+}
+.form_section{
+  h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+  }
+}
+.text_style{
+  font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.boxed{
+  background-color: $white-color;
+  padding: 30px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+.boxed div label{
+  // display: flex;
+  // flex-direction: column-reverse;
+}
+
+
+
+.boxed label {
+  display: inline-block;
+  // width: 110px;
+  padding: 10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px green;
+}

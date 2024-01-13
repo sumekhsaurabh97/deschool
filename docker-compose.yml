@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: .
+    container_name: frontend
+    # environment:
+    #   - MONGO_INITDB_ROOT_USERNAME=djangoadmin
+    #   - MONGO_INITDB_DATABASE=auth
+    #   - MONGO_INITDB_ROOT_PASSWORD=admin
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./data:/data/frontend
+    # networks:
+    #     - deschool-network
+    command: yarn start

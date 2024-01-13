@@ -1,0 +1,209 @@
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/variables.scss";
+
+.teacherProfile {
+  margin-top: 48px;
+}
+.teachersPage {
+  gap: 32px;
+}
+
+// teacherProfile
+.flagOnProfile {
+  position: absolute;
+  right: 4px;
+  top: 117px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: $white-color;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.teacherProfileImage {
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  background-color: #444444;
+  position: relative;
+}
+.ellipse {
+  background: url(/assets/images/Ellipse.svg) 0 0 no-repeat;
+  content: "";
+  width: 150px;
+  position: absolute;
+  height: 40px;
+  left: 24px;
+  bottom: -45px;
+  background-size: 75%;
+}
+
+.teacherProfileInfo {
+  padding-left: 32px;
+  width: 100%;
+  margin-top: 16px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    margin-bottom: 8px;
+    span {
+      margin-right: 8px;
+    }
+  }
+
+  a {
+    margin-left: -10px;
+    color: $black-color;
+  }
+  a span {
+    color: #444444;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+  }
+}
+.designation {
+  color: #444444;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3%;
+  font-weight: 500;
+}
+.language_Experince {
+  gap: 32px;
+}
+
+.exp_lang_style > *:first-child {
+  color: #8c8c8c;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 3%;
+}
+.exp_lang_style > *:last-child {
+  color: #444444;
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3%;
+}
+.teacherIntro {
+  margin: 36px 0px 8px 0px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  font-weight: 400;
+}
+.readMore {
+  color: #050505;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3%;
+}
+
+// my introduction
+.myIntroduction {
+  color: $black-color;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  margin: 56px 0px 32px 0px;
+}
+
+.video {
+  height: 300px;
+  width: 300px;
+}
+.introduction_review_border {
+  margin: 56px 0px 56px 0px;
+}
+
+.reviewsTitle {
+  color: $black-color;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: 23px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .teacherProfileInfo > div:first-child {
+    flex-direction: column;
+  }
+  .designation {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .teacherProfile {
+    margin-top: 28px;
+  }
+  .teachersPage {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .teacherIntro {
+    margin-top: 28px;
+  }
+  .myIntroduction {
+    margin: 36px 0px 28px 0px;
+  }
+  .introduction_review_border {
+    margin: 36px 0px 36px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .teacherProfile {
+    flex-direction: column;
+    margin-top: 28px;
+  }
+  .teacherProfileImage {
+    margin: 0px auto;
+  }
+  .ellipse {
+    left: 25px;
+    bottom: -46px;
+  }
+
+  .like_share_icon {
+    flex-direction: column;
+  }
+  .designation {
+    margin-top: 8px;
+  }
+  .teacherProfileInfo {
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    margin-top: 56px;
+  }
+  .language_Experince {
+    justify-content: center;
+  }
+
+  .myIntroduction {
+    margin: 36px 0px 32px 0px;
+  }
+  .introduction_review_border {
+    margin: 36px 0px 36px 0px;
+  }
+  .teachersPage {
+    flex-direction: column;
+    gap: 0px;
+  }
+}

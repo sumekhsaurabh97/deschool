@@ -1,0 +1,15 @@
+@import "../../styles/_variables.scss";
+
+.paddingTop_7 {
+    padding-top: 55px;
+  }
+
+  .cancelLinkColor{
+    color: $body-bg;
+    font-weight: 700;
+
+    &:hover{
+    color: $tertiary-brand-color;
+    }
+  }
+  

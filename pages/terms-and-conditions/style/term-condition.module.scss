@@ -1,0 +1,81 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles//_breakpoints.scss";
+
+.semantics {
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: -1.5px;
+    color: $secondary-black-color;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  @media screen and (max-width: $mobile-small) {
+    h1 {
+      font-size: 30px !important;
+      text-align: center;
+      line-height: 36px;
+    }
+    h3 {
+      font-size: $font-size-global !important;
+      line-height: 24px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+  h2 button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: $secondary-black-color;
+    background: none;
+    // padding: 18px 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  a {
+    color: $body-bg;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $body-bg;
+    text-decoration: underline !important;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-global;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: $secondary-black-color;
+    margin-bottom: 0rem !important;
+  }
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-global;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    // padding: 10px;
+    list-style: none;
+    color: $secondary-black-color;
+    margin-bottom: 0rem !important;
+  }
+
+  li::before {
+    content: "•";
+    color: $tertiary-black-color;
+    display: inline-block;
+    width: 1em;
+  }
+}

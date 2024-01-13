@@ -1,0 +1,50 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.background_how_works {
+  background-color: $quaternary-brand-color;
+  padding: 100px 0;
+  .HowWorks_center {
+    text-align: center;
+  }
+}
+.card_description_style {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: justify;
+}
+.card_title_style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  font-feature-settings: "liga" off;
+  text-align: left;
+}
+.title_style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 54px;
+  letter-spacing: -1.5px;
+}
+  @media screen and (max-width: $tablet) {
+    .card_title_style , .title_style {
+    text-align: center !important;
+    padding-bottom: 10px !important;
+    }
+    .card_description_style {
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .title_style {
+    font-size: 42px;
+    }
+  }
+

@@ -1,0 +1,274 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles//_breakpoints.scss";
+
+.cardWrapper {
+  border-radius: 15px;
+  background: $color-brand-primary;
+  &.cardHover {
+    &:hover {
+      .imgWrapper {
+        max-width: 340px;
+        max-height: 280px;
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  &.cardComingSoon {
+    &:hover {
+      .imgWrapper {
+        position: relative;
+        img {
+          opacity: 0.2;
+        }
+      }
+      p {
+        &.comingSoonText {
+          display: block;
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center; /** Y-axis align **/
+          justify-content: center; /** X-axis align **/
+          font-style: normal;
+          font-weight: bold;
+          font-size: 17px;
+          line-height: 27px;
+          letter-spacing: -0.02em;
+          font-feature-settings: "liga" off;
+          color: $color-brand-text;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    margin: auto;
+  }
+  &.cardHorizontal {
+    display: flex !important;
+    flex: 1 1 auto;
+    @media screen and (max-width: $mobile) {
+      display: block !important;
+    }
+    &.cardComingSoon {
+      &:hover {
+        .imgWrapper {
+          position: relative;
+          img {
+            opacity: 0.2;
+          }
+        }
+        p {
+          &.comingSoonText {
+            display: block;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center; /** Y-axis align **/
+            justify-content: center; /** X-axis align **/
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 27px;
+            letter-spacing: -0.02em;
+            font-feature-settings: "liga" off;
+            color: $color-brand-text;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .imgWrapper {
+      max-width: 340px;
+      min-width: 340px;
+      max-height: 280px;
+      div {
+        display: block !important;
+      }
+      @media screen and (max-width: $tablet) {
+        height: 100%;
+        width: 100%;
+        display: contents;
+        max-height: 332px;
+      }
+      .comingSoonText {
+        display: none;
+      }
+      img {
+        &.cardImg {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: unset;
+          @media screen and (max-width: $mobile) {
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 15px;
+          }
+        }
+      }
+    }
+    .cardContent {
+      display: flex !important;
+      flex: 1 1 auto;
+      a {
+        display: flex !important;
+        flex: 1 1 auto;
+        .imgWrapper {
+          @media screen and (min-width: $mobile) and (max-width: $tablet) {
+            // display: flex;
+            display: block;
+          }
+          img {
+            &.cardImg {
+              border-top-left-radius: 15px;
+              border-bottom-left-radius: 15px;
+              @media screen and (max-width: $mobile) {
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 15px;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: $mobile) {
+          display: block !important;
+        }
+      }
+      .imgWrapper {
+        img {
+          &.cardImg {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            object-fit: cover;
+            @media screen and (max-width: $mobile) {
+              border-bottom-left-radius: 0px;
+              border-top-right-radius: 15px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $mobile) {
+        display: block !important;
+      }
+    }
+  }
+  .imgWrapper {
+    img {
+      &.cardImg {
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    }
+    .comingSoonText {
+      display: none;
+    }
+    &.ellipse {
+      &::after {
+        background: url(/assets/images/Ellipse.svg) 0 0 no-repeat;
+        content: "";
+        width: 150px;
+        position: absolute;
+        height: 40px;
+        left: 80px;
+        bottom: 145px;
+        background-size: 70%;
+      }
+    }
+    &.rounded {
+      img {
+        &.cardImg {
+          object-fit: cover;
+          border-top-left-radius: none;
+          border-top-right-radius: none;
+          padding: 30px !important;
+          border-radius: 50%;
+          text-align: center;
+          margin: auto;
+        }
+      }
+    }
+  }
+  span {
+    &.badge {
+      z-index: 999;
+      top: 15px;
+      left: 0;
+      background: $badge-color;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      display: inline-block;
+      position: absolute;
+      align-items: center;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $color-brand-primary;
+      padding: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 68px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1024px) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 76px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: 810px) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 80px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 811px) and (max-width: $tablet) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 74px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 516px) and (max-width: 560px) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 70px !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 515px) {
+  .imgWrapper {
+    &.ellipse {
+      &::after {
+        left: 60px !important;
+      }
+    }
+  }
+}

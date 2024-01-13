@@ -1,0 +1,42 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.sectionContent {
+  width: 580px;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 54px;
+    
+    @media screen and (max-width : $mobile-small) {
+      line-height: 44px !important;
+      font-size: 40px !important;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29.5px;
+    letter-spacing: -0.02em;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: auto;
+    h1 {
+      font-size: 42px;
+    }
+  }
+}
+.bg_style {
+  background: $secondary-brand-background-color;
+}
+.linkStyle {
+  color: $tertiary-brand-color;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.linkStyle:hover {
+  color: $tertiary-brand-color;
+}

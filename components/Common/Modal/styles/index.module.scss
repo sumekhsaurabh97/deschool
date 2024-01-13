@@ -1,0 +1,21 @@
+@import "../../../../styles/_breakpoints.scss";
+@import "../../../../styles/_variables.scss";
+
+.modalDialog{
+    min-width: 725px;
+    margin-top: 75px !important;
+    min-height: 526px;
+    @media screen and (max-width: $tablet) {
+      min-width: unset;
+      margin-top: 25px !important;
+    }
+    .modalContent{
+      border: none;
+      border-radius: 0px;
+      .modalHeader{
+        @media screen and (max-width: $mobile) {
+          display: flex !important;
+        }
+      }
+    }
+  }

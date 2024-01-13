@@ -1,0 +1,304 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.container_background {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-right: 1rem !important;
+  }
+  div {
+    .navIcon {
+      span {
+        width: 200px !important;
+        overflow: visible !important;
+
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+          width: 150px !important;
+        }
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.UniversalSearchStyle {
+  cursor: pointer;
+  text-decoration: none;
+  color: $tertiary-black-color !important;
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 360px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: $tertiary-black-color;
+    padding-left: 6px;
+  }
+}
+
+.UniversalSearchStyle:hover {
+  color: $tertiary-black-color !important;
+}
+.UniversalSearchImage {
+  span {
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: cover !important;
+    border-radius: 50%;
+  }
+}
+.searchResult {
+  position: absolute;
+  width: 301px;
+  margin-top: 10px;
+  border-radius: 11px;
+  padding: 15px 10px;
+  background-color: #fff;
+  box-shadow: 0 15px 15px rgb(0 0 0 / 8%);
+  max-height: 150px;
+  overflow-y: scroll;
+}
+.searchResult::-webkit-scrollbar {
+  display: none;
+}
+
+.respTooltip {
+  width: 12px;
+  position: absolute;
+  right: 20px;
+  top: 36px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 12px;
+  background-color: #fff;
+}
+.tooltip {
+  width: 12px;
+  position: absolute;
+  right: 14px;
+  top: 36px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 12px;
+  background-color: #fff;
+}
+.cartImageResp {
+  cursor: pointer;
+  @media screen and (max-width: 350px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.cartImage2 {
+  width: 355px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  top: 42px;
+  z-index: 100;
+
+  @media screen and (max-width: $tablet) {
+    width: 300px;
+    right: -58px;
+  }
+  @media screen and (max-width: 424px) {
+    width: 250px;
+    right: -32px;
+  }
+}
+.cartImage {
+  position: relative;
+  // display: block ;
+  cursor: pointer;
+
+  span {
+    overflow: visible !important;
+    width: 60px !important;
+    @media screen and (min-width: $tablet) {
+      width: 45px !important;
+    }
+  }
+  .dropdown {
+    width: 355px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    top: 42px;
+    z-index: 100;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none !important;
+  }
+}
+
+.navCollapse {
+  padding-left: 40px;
+  @media screen and (max-width: $desktop) {
+    padding-left: 0px !important;
+  }
+}
+.styles_navigationBar {
+  background: $body-bg !important;
+
+  justify-content: center;
+  @media screen and (max-width: $mobile) {
+    position: unset !important;
+  }
+
+  .styles_navContainer {
+    display: flex;
+    justify-content: space-around;
+    .styles_searchWrapper {
+      .styles_searchTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: $font-size-global;
+        line-height: 20px;
+        font-feature-settings: "liga" off;
+        color: $white-color;
+      }
+
+      .styles_searchInputWrapper {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .styles_searchInputWrapper {
+    display: none !important;
+  }
+}
+
+.find {
+  z-index: 22;
+}
+.landing_form {
+  color: $white-color;
+  width: 280px;
+  height: 42px;
+  border: 2px solid $white-color;
+  border-radius: 8px;
+  background: url(../../../public/assets/images/find.svg) 0 0 no-repeat;
+  background-position: 10px 10px;
+  padding: 0 5px 0 35px;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    width: 150px;
+    margin-top: 5px;
+  }
+}
+.landing_form:focus {
+  outline: none !important;
+}
+.landing_form::placeholder {
+  color: $white-color;
+}
+
+.container_background {
+  background: $body-bg;
+  width: 100%;
+  // height: 80px;
+  padding: 12px 0;
+}
+
+.style_navigation_item {
+  font-size: $font-size-global !important;
+  cursor: pointer;
+  color: $white-color !important;
+
+  @media screen and (max-width: $tablet) {
+    color: $secondary-black-color !important;
+    .cartLength {
+      color: $white-color !important;
+    }
+  }
+}
+
+.navbarIcon {
+  background-image: url(/assets/images/hamburger.svg) !important;
+  background-size: 28px 28px !important;
+  border: none;
+}
+button[aria-expanded="true"] > span.navbarIcon {
+  background-image: url(../../../public/assets/images/hamburger-cross.svg) !important;
+  background-size: 28px 28px !important;
+  border: none;
+}
+button[aria-expanded="true"] > #navbarTogglerDemo03 {
+  width: 100%;
+}
+button[aria-expanded="true"] > .container_background {
+  height: 1400px;
+  background: $body-bg;
+}
+.navColor {
+  a {
+    color: $white-color;
+  }
+  a:hover {
+    color: $color-brand-footer-link !important;
+  }
+}
+.navButton:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+@media screen and (max-width: $tablet) {
+  .navColor {
+    background-color: $white-color;
+    height: 1400px;
+    z-index: 1500;
+    li {
+      margin-top: 1rem;
+      border-bottom: 0.5px solid #dcdee1;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-large) {
+  .navListTwo {
+    margin-left: 9rem;
+  }
+  .navListLogged {
+    margin-left: 5.5rem;
+  }
+}
+@media screen and (min-width: $desktop) and (max-width: desktop-large) {
+  .navListTwo {
+    margin-left: 0 !important;
+  }
+  .navListLogged {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .navListTwo {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .navListTwo {
+    margin-left: 0rem !important;
+  }
+  .navListLogged {
+    margin-left: 0rem !important;
+  }
+}
+.active {
+  color: $color-brand-footer-link !important;
+}

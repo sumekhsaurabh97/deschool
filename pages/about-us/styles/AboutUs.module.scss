@@ -1,0 +1,142 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles//_breakpoints.scss";
+
+.section {
+  padding-left: 0;
+  padding-right: 0;
+}
+.aboutPushingLimits {
+  background-color: #ffeceb;
+  padding: 130px 0px 90px;
+  background-image: url(/assets/images/1.png), url(/assets/images/2.png);
+  background-position: left 0px top 55px, right bottom 30px;
+  background-repeat: no-repeat, no-repeat;
+}
+.sec1Head {
+  text-align: center;
+  font-size: 38px;
+  line-height: 47px;
+  max-width: 660px;
+  margin: auto;
+  font-weight: 700;
+} 
+.sec1Para {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  max-width: 610px;
+  letter-spacing: -0.02em;
+  color: $secondary-black-color;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.aboutUsEmpower {
+  background: url(/assets/images/aboutsec2bg.svg) center center / contain
+    no-repeat;
+  padding: 100px 0;
+}
+.sec2Head {
+  composes: sec1Head;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: -1.5px;
+  max-width: 375px;
+}
+.sec2Head1 {
+  margin: auto;
+}
+.sec2Sub {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: $secondary-black-color;
+  max-width: 375px;
+}
+.fontWgt {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.sec3 {
+  background: $tertiary-brand-color;
+}
+.sec3Col {
+  margin: auto;
+  width: 250px;
+}
+
+.sec3Head {
+  font-weight: 700;
+  font-size: $font-size-section-heading;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: $white-color;
+}
+.cardBtn {
+  background: $white-color;
+  border-radius: 8px;
+  font-weight: 700;
+  color: $body-bg;
+  font-size: $font-size-global;
+  padding: 18px !important;
+}
+
+.cardBtn:hover {
+  background: $color-brand-footer-link;
+  color: $body-bg;
+}
+.cardPara {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: $white-color;
+  margin-bottom: 3rem;
+}
+
+/* Responsive */
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .aboutPushingLimits {
+    padding: 200px 0 250px !important;
+    background-position: left 0 top 50px, bottom 25px right !important;
+  }
+}
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .aboutPushingLimits {
+    padding: 300px 0 295px !important;
+    background-position: left 0 top 40px, bottom 50px right !important;
+}
+  .aboutUsEmpower {
+    background: none;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .aboutPushingLimits {
+    padding: 200px 0 !important;
+    background-position: left 0 top 20px, bottom 50px right !important;
+    background-size: 30%;
+  }
+  .sec1Head {
+    font-size: 42px;
+  }
+  .aboutUsEmpower {
+    background: none;
+  }
+  .sec2Head {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: $mobile-small) {
+  .aboutPushingLimits {
+    padding: 250px 0 !important;
+    background-position: left 0 top 40px, bottom 30px right !important;
+    background-size: 30%;
+  }
+}

@@ -1,0 +1,312 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles//_breakpoints.scss";
+
+.class_review_main {
+  display: flex;
+  gap: 30px 32px;
+
+  width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.teachers_review_heading {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  padding-top: 30px;
+  margin: 30px auto;
+  @media screen and (max-width: $tablet) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+.review_teachers_profile {
+  text-align: left;
+  min-width: 0px !important;
+  margin: 0px !important;
+  width: auto !important;
+}
+
+.about_Class_img {
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about_class_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  width: 80%;
+  line-height: 30px;
+  color: #2e2d2d;
+  text-align: left;
+  margin: 60px 0px;
+
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+    width: 100%;
+    margin: 40px auto;
+    font-size: 18px;
+  }
+}
+
+.about_class_title_para {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  width: 80%;
+  line-height: 30px;
+  color: #2e2d2d;
+  text-align: left;
+  margin: 60px 0px;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 40px auto;
+  }
+}
+
+.aboutClass {
+  padding: 50px 0px;
+  width: 50%;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.about_class_intro {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}
+.about_class_intro_clock {
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.text {
+  display: inline;
+  width: 100%;
+}
+
+.read_or_hide {
+  color: rgb(18, 17, 17);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form_List {
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  margin: 40px 0px;
+  padding: 0 !important;
+
+  @media screen and (max-width: $desktop) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.form_textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 10px 10px;
+}
+.icons_review_img {
+  text-align: center;
+}
+.review_class_card {
+  background: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  border-radius: 6px 6px 6px 6px;
+  color: black;
+}
+
+.review_class_card_title {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px auto;
+  height: auto;
+  width: 466px;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    padding-top: 15px;
+    font-size: 18px;
+  }
+}
+
+.review_class_card p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  letter-spacing: 0px;
+  width: 52%;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    padding-top: 5px;
+  }
+}
+
+.form_submit_button {
+  background-color: #7dfd7d;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 15px;
+  border-radius: 10px;
+  width: auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 700;
+  margin: 30px 0px;
+
+  @media screen and (max-width: $mobile-small) {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
+
+.radio_toolbar {
+  margin: 10px auto;
+}
+
+.radio_toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio_toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 0px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  min-height: 100%;
+  width: 110px;
+}
+
+.radio_toolbar label:hover {
+  background-color: rgb(206, 215, 206);
+}
+
+.radio_toolbar input[type="radio"]:focus + label {
+  border: 2px #444;
+}
+
+.radio_toolbar input[type="radio"]:checked + label {
+  background-color: #bfb;
+  border-color: #4c4;
+}
+
+.radio_toolbar_checkbox input[type="checkbox"]:focus + label {
+  border: 2px #444;
+}
+
+.radio_toolbar_checkbox input[type="checkbox"]:checked + label {
+  background-color: #bfb;
+  border-color: #4c4;
+}
+
+.radio_toolbar_checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio_toolbar_checkboxlabel:hover {
+  background-color: rgb(206, 215, 206);
+}
+
+.radio_toolbar_checkbox label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 1px solid #2a37af;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: blue;
+}
+
+.form_List_checkbox {
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 40px 0px;
+  justify-content: center;
+}
+
+.radio_toolbar_checkbox_improved label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 0px solid #444;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.radio_toolbar_checkbox_improved input[type="checkbox"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio_toolbar_checkbox_improved input[type="checkbox"]:focus + label {
+  border: 2px #444;
+}
+
+.radio_toolbar_checkbox_improved input[type="checkbox"]:checked + label {
+  background-color: #bfb;
+  border-color: #4c4;
+}
+
+.radio_toolbar_textarea {
+  width: 100%;
+  height: 100px;
+}

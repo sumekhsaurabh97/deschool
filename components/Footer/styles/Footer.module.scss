@@ -1,0 +1,92 @@
+@import "../../../styles/_variables.scss";
+
+.styles_footer {
+  padding: 50px 0 0px;
+  background: $secondary-black-color;
+}
+
+.hr {
+  margin: 10px auto;
+  color: $white-color;
+  visibility: 50%;
+  border-top: 2px solid;
+}
+.styles_logo {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_text {
+  p {
+    max-width: 290px;
+    color: $color-brand-border;
+    padding-top: 20px;
+    padding-bottom: -15px;
+  }
+}
+
+.footer_contact{
+  max-width: 290px;
+  padding-top: 20px;
+
+  .email, .footer_phone{
+
+    a{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $white-color;
+      display: block;     
+    }
+  }
+}
+
+.footer_link_item {
+  width: 160px;
+}
+.sparkLink{
+  text-decoration: none;
+  color: $white-color;
+  transition: all .25s ease-in-out;
+  &:hover{
+    color: $color-brand-footer-link;
+    text-decoration: underline;
+  }
+}
+.footer_container_width {
+  width: 90% !important;
+}
+
+@media (max-width: 768px) {
+ .footer_text{
+  p {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -.02em;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+ }
+ .footer_contact{
+  // text-align: center;
+  margin: auto;
+ }
+ .footer_links{
+  text-align: center;
+ }
+  .footer_link_mob_screen {
+    width:auto;
+    // text-align: center;
+  }
+  .text_sm_center {
+    text-align: center;
+  }
+  .footer_copyright{
+    font-size: 14px;
+    // width: 300px;
+  } 
+}

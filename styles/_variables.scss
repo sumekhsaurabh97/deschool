@@ -1,0 +1,30 @@
+/* ---- Main colors ---- */
+$color-brand-primary: #ffffff;
+$color-brand-text: #222222;
+
+$color-brand-gradient-start: #fe8c00;
+$color-brand-gradient-end: #f83600;
+$color-brand-border: #e3e3e3;
+$color-brand-footer-link: #fee448;
+
+$body-bg: #f17c72;
+$white-color: #ffffff;
+$black-color: #000000;
+$secondary-black-color: #222;
+$tertiary-black-color: #2e2d2d;
+$badge-color: #8e97fd;
+$secondary-brand-background-color: #ffeceb;
+$tertiary-brand-color: #dd6459;
+$quaternary-brand-color: #ffb4ab;
+$quinary-brand-color: #f7f5f4;
+$on-voucher-success-color: #12af2b;
+
+/* ---- Typography ---- */
+$font-family-base: "Montserrat", sans-serif !important;
+
+/* ---- Font Size ---- */
+$font-size-global: 16px;
+$font-size-section-heading: 22px;
+$font-size-meta: 12px;
+
+$breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");

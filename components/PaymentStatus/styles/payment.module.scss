@@ -1,0 +1,30 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints";
+
+.payment {
+  .commonHeadColor {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .headClr {
+    color: #4caf50 ;
+  }
+  .headClrFail {
+    color: #be350b ;
+  }
+  .formButton {
+    background: $body-bg;
+    border-radius: 8px;
+
+    padding: 8px 14px;
+    gap: 10px;
+    font-size: $font-size-global;
+    border: 0px;
+    color: $white-color;
+  }
+  .formButton:hover {
+    background: $color-brand-footer-link;
+    color: $body-bg;
+  }
+}

@@ -1,0 +1,166 @@
+@import "../../../../styles/_breakpoints.scss";
+@import "../../../../styles/_variables.scss";
+
+.userModal {
+  background: linear-gradient(
+    to right,
+    $body-bg 0%,
+    $body-bg 36%,
+    #ffffff 36%,
+    #ffffff 100%
+  );
+  padding: 25px 0px;
+  @media screen and (max-width: $mobile) {
+    background: linear-gradient(
+      to bottom,
+      $body-bg 0%,
+      $body-bg 40%,
+      #ffffff 40%,
+      #ffffff 100%
+    );
+    min-height: 625px;
+  }
+  .userModalClose {
+    text-align: right;
+    margin: auto;
+  }
+  .contentWrapper {
+    .content {
+      h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 30px;
+        letter-spacing: -0.03em;
+        font-feature-settings: "liga" off;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        font-feature-settings: "liga" off;
+        color: #ffffff;
+      }
+    }
+  }
+  .loginSignupWrapper {
+    padding-left: 35px;
+    @media screen and (max-width: $mobile) {
+      text-align: left;
+      margin-top: 75px;
+      padding-left: unset;
+    }
+    label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $tertiary-black-color;
+    }
+    input {
+      outline: none;
+      border: 1px solid $tertiary-black-color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: $tertiary-black-color;
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        font-feature-settings: "liga" off;
+        color: $tertiary-black-color;
+        opacity: 0.6;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    button {
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .forgotPasswordBtn {
+      p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: right;
+        color: #0875e1;
+        cursor: pointer;
+        &:hover {
+          color: $body-bg;
+        }
+      }
+    }
+    .submitBtn {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      background: #f17c72;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      width: 100%;
+      &:hover {
+        background: $color-brand-footer-link;
+        color: $body-bg;
+      }
+    }
+    .createAccountWrapper {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      font-feature-settings: "liga" off;
+      color: #333333;
+      span {
+        cursor: pointer;
+        &:hover {
+          color: $body-bg;
+        }
+      }
+    }
+    .signUpSuccessWrapper {
+      text-align: center;
+      .signUpSuccessContent {
+        h4 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 23px;
+          line-height: 30px;
+          letter-spacing: -0.03em;
+          font-feature-settings: "liga" off;
+          color: $tertiary-black-color;
+          margin-bottom: 20px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: -0.02em;
+          font-feature-settings: "liga" off;
+          color: $tertiary-black-color;
+        }
+      }
+    }
+  }
+}

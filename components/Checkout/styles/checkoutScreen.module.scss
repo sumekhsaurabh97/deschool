@@ -1,0 +1,110 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints";
+
+.heightLayout {
+  height: calc(100vh - 85px);
+  // margin-top: 0.5rem;
+}
+
+.cartCourse {
+  border-bottom: 1px solid $tertiary-black-color;
+}
+
+.billingFormMargin {
+  margin-right: -4rem !important;
+  @media screen and (max-width: $desktop) {
+    margin-right: 1rem !important;
+  }
+}
+.inputField {
+  width: 75% !important;
+  @media screen and (max-width: $desktop) {
+    width: 60% !important;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 70% !important;
+  }
+  @media screen and (max-width: 350px) {
+    width: 60% !important;
+  }
+}
+.removeVoucher {
+  @media screen and (max-width: $desktop) {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+.voucherRemove {
+  @media screen and (max-width: $mobile) {
+    margin-right: 0px !important;
+  }
+}
+
+.billingInput {
+  width: 100%;
+  height: 46px;
+  background-color: $color-brand-primary;
+  border: 1px solid $tertiary-black-color;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  font-feature-settings: "liga" off;
+  color: $tertiary-black-color;
+  opacity: 0.5;
+  padding: 0 5px 0 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.billingInput:focus {
+  border: 2px solid $secondary-black-color !important;
+  box-shadow: none !important;
+}
+
+.formButton {
+  // text-align: center;
+  background: $body-bg;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 15px !important;
+  font-size: $font-size-global;
+  border: 0px;
+  color: $white-color;
+}
+.formButton:hover {
+  background: $color-brand-footer-link;
+  color: $body-bg;
+}
+.bgColor {
+  background: #fafafa;
+}
+.discountBtn {
+  background: $body-bg !important;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 11px 20px !important;
+  margin-left: 0px;
+  font-size: $font-size-global;
+  border: 0px;
+  color: $white-color !important;
+
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    padding: 11px 25px !important;
+  }
+}
+.discountBtn:hover {
+  background: $color-brand-footer-link !important;
+  color: $body-bg !important;
+}
+.seperatorCenter::before {
+  padding-top: 2px;
+}
+
+.onVoucherSuccess {
+  border: 1px solid $on-voucher-success-color;
+}
